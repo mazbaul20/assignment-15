@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AssignmentController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Support\Facades\Route;
@@ -43,8 +44,7 @@ Route::resource('/product',ProductController::class);
 Route::post('/contact',ContactController::class);
 
 //Task 7: Resource Controller
-
-
+Route::resource('/post',PostController::class);
 
 // Task 8: Blade Template Engine
 Route::get('/', function () {
